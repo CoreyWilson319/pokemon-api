@@ -13,8 +13,8 @@ fetch('https://api.github.com/users/CoreyWilson319')
     }
     console.log(coreyObj);
 
-    const newElement = document.createElement('p');
-    newElement.textContent = coreyObj.name;
+    let newElement = document.createElement('p');
+    newElement.textContent = coreyObj.bio;
     // append newElement to container(parent)
     container.appendChild(newElement);
 
